@@ -1,0 +1,128 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movimentação de Personagem",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Teclado",
+							"sid": 882291860433906,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Protagonista",
+							"sid": 332122519243415,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 324053585939341
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 801242940818253,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Protagonista",
+							"sid": 576768306023652,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 661312852101356
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 872135409429294,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Protagonista",
+							"sid": 559802233818595,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 656772457579001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 962275632536159,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Protagonista",
+							"sid": 172110910732012,
+							"behaviorType": "MovimentoEmGrid",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 318151867451641
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 959735622498534
+						}
+					],
+					"actions": [],
+					"sid": 162544165648700
+				}
+			],
+			"sid": 606039130427799
+		}
+	],
+	"sid": 654845468086650
+}
